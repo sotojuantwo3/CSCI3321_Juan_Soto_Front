@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Recipes | MyRecipe</title>
+    <style>
+    	h4 {
+        	font-family: Brush Script MT;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .recipe-container-chicken, .recipe-container-salad, .recipe-container-steak { 
+        	font-size: 30px;
+            background-color: #a66e1b;
+            width: 800px;
+            border: 15px solid #4d2e00;
+            padding: 35px;
+            margin: 20px;
+        }
+
+        .recipe-container-chicken{
+            background-color: #a66e1b;
+            border: 15px solid #4d2e00;
+        }
+
+        .recipe-container-salad {
+            background-color: #e6c109;
+            border: 15px solid #017813;
+        }
+
+        .recipe-container-steak {
+            background-color: #ffae00;
+            border: 15px solid #872600;
+        }
+
+        body {
+        	background-color: #f5d19d;
+        }
+        
+        label, li {
+        	font-family: Tahoma;
+        	font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="font-size: 85px; text-align: center;">Top 3 Recipes</h1>
+
+    <!--Salad box-->
+    <div class="recipe-container-salad">
+        <h1 style="font-size: 55px">BLT Chicken Salad</h1>
+        
+            <img src="https://assets.kraftfoods.com/recipe_images/opendeploy/125460_640x428.jpg" alr="BLTChickenSALAD Image" width="550" height="350" >
+            <h4>Ingredients</h4>
+            <form>
+                <input type="checkbox" id="Main Ing" name="Chicken2" value="Animal">
+                <label for="Chicken2">31.5 lbs. of Chicken</label><br>
+                <input type="Checkbox" id="Main Ing" name="Pork" value="Animal">
+                <label for="Pork">10 bacon strips, cooked and crumbled</label><br>
+                <input type="Checkbox" id="Main Ing" name="Egg" value="Animal">
+                <label for="Egg">2 hard-boiled large eggs, sliced</label><br>
+                <input type="checkbox" id="Vegetable" name="Tomatoes" value="Plant">
+                <label for="Tomatoes">2 large tomatoes, chopped</label><br>
+                <input type="checkbox" id="Vegetable" name="Green" value="Plant">
+                <label for="Green">8 cups of torn salad greens</label><br>
+                <input type="checkbox" id="Vegetable" name="Onion" value="Plant">
+                <label for="Onion">2 tbsp. finely chopped onion</label><br>
+                <input type="checkbox" id="Seasoning" name="Lemon" value="Flavor">
+                <label for="Lemon">1 tbsp. lemon juice</label><br>
+                <input type="checkbox" id="Seasoning" name="BBQ" value="Flavor">
+                <label for="BBQ">3-4 tbsp. of barbecue sauce</label><br>
+                <input type="checkbox" id="Seasoning" name="Mayo" value="Flavor">
+                <label for="Mayo">1/2 cup of mayonnaise</label><br>
+            </form>
+            <h4>Directions</h4>	
+    	        <ol>
+        	        <li>In a bowl, mix all the ingredients but meats and vegetables (refridgerate while not using).</li>
+           	        <li>In another bowl, combine the vegetables and meats (mixed or one on top and other on bottom).</li>
+           	        <li>Serve salad on to plates and dress with the dressing from Step 1.</li>
+                </ol>
+        </div>
+
+
+
+        <!--chicken alfred box-->
+        <div class="recipe-container-chicken">
+            <h1 style="font-size: 55px">Chicken and Shrimp Alfredo</h1>
+            <img src="https://www.nutmegnanny.com/wp-content/uploads/2017/01/cajun-shrimp-fettuccine-alfredo-3.jpg" alr="Chicken&ShrimpAlfredo Image" width="450" height="650" >
+        
+            <h4>Ingredients</h4>
+                <form>
+                    <input type="checkbox" id="Main Ing" name="Chicken" value="Animal">
+                    <label for="Chicken">32oz. of Chicken</label><br>
+                    <input type="Checkbox" id="Main Ing" name="Shrimp" value="Animal">
+                    <label for="Shrimp">16oz. bag of Shrimps</label><br>
+                    <input type="checkbox" id="Vegetable" name="Green Bell Pepper" value="Flavor">
+                    <label for="Green Bell Pepper">1 Green Bell Pepper</label><br>
+                    <input type="checkbox" id="Vegetable" name="Yellow Bell Pepper" value="Flavor">
+                    <label for="Yellow Bell Pepper">1 Yellow Bell Pepper</label><br>
+                    <input type="checkbox" id="Vegetable" name="Red Bell Pepper" value="Flavor">
+                    <label for="Red Bell Pepper">1 Red Bell Pepper</label><br>
+                    <input type="checkbox" id="Pasta" name="Pasta" value="Plant">
+                    <label for="Pasta">1 Barilla Fettuccine Pasta box</label><br>
+                    <input type="checkbox" id="Spices" name="Italian" value="Plant">
+                    <label for="Italian">8 pinches of Italian Spice</label><br>
+                    <input type="checkbox" id="Spices" name="Cajun" value="Plant">
+                    <label for="Cajun">6 pinches of Cajun Seasoning</label><br>
+                    <input type="checkbox" id="Spices" name="Garlic Salt" value="Plant">
+                    <label for="Garlic Salt">6 pinches of Garlic Salt</label><br>
+                    <input type="checkbox" id="Sauce" name="ALfredo" value="Flavor">
+                    <label for="Alfredo">1 Bertolli Alfredo Jar</label><br>
+                    <input type="checkbox" id="Dairy" name="Butter" value="Flavor">
+                    <label for="Butter">2 tbsp. of Butter</label><br>
+                </form>
+
+            <h4>Directions</h4>	
+    		    <ol>
+        		    <li>Boil water in a pot big enough for the pasta. Once boiling, add in the pasta
+            	        with the italian spice and garlic salt. Stir the pasta every 5-10 minutes until
+            	        soft (or preferred texture).</li>
+            	    <li>While the pasta boils, add the butter to a separate pan. Once butter has melted,
+            	        add the vegetable to the pan and cook for 4 minutes.</li>
+            	    <li>Add and cook the chicken and shrimp in cajun seasoning until ready.</li>
+            	    <li>Once the pasta is done, save a coffee mug size of the pasta water for flavor and 
+            	        strain the pasta. Put it back into the pot with the pasta water and add the Alfredo sauce.</li>
+            	    <li>Place pot back over the stove (used to boil the pasta), reduce the stove temperature to
+            	        LOW, and stir the pasta in the sauce.</li>
+            	    <li>Once the pasta has been stirred with the sauce, add the chicken and shrimp to the pasta
+            	        and mix again.</li>
+            	    <li>Let it set for 3 minutes and then it is ready to serve.</li>
+    		    </ol>
+        </div>
+
+
+      <div class="recipe-container-steak">
+        <h1 style="font-size: 55px">Chicken and Shrimp Alfredo</h1>
+        <img src="https://www.eatwell101.com/wp-content/uploads/2018/03/beef-and-potatoes.jpg" alr="Chicken&ShrimpAlfredo Image" width="450" height="650" >
+        
+        <h4>Ingredients</h4>
+            <form>
+                <input type="checkbox" id="Main Ing" name="Steak" value="Animal">
+                <label for="Steak">1.5 lbs. of preferred steak cut</label><br>
+                <input type="checkbox" id="Main Ing" name="Potatoes" value="Plant">
+                <label for="Potatoes">1.5 lbs. baby yellow potatoes (cut into quarters)</label><br>
+                <input type="checkbox" id="Cooking" name="Olive" value="Flavor">
+                <label for="Olive">1 tbsp. olive oil</label><br>
+                <input type="checkbox" id="Cooking" name="Butter2" value="Flavor">
+                <label for="Butter2">3 tbsp. butter (sliced)</label><br>
+                <input type="checkbox" id="Cooking" name="Garlic" value="Flavor">
+                <label for="Garlic">5 garlic cloves (finely minced)</label><br>
+                <input type="checkbox" id="Cooking" name="Thyme" value="Flavor">
+                <label for="Thyme">1 tsp. fresh thyme</label><br>
+                <input type="checkbox" id="Cooking" name="Rose" value="Flavor">
+                <label for="Rose">1 tsp. fresh rosemary</label><br>
+                <input type="checkbox" id="Cooking" name="Oregano" value="Flavor">
+                <label for="Oregano">1 tsp. fresh oregano</label><br>
+                <input type="checkbox" id="Cooking" name="S&P" value="Flavor">
+                <label for="S&P">3 tsp. salt, crushed pepper, and red chili pepper flakes</label><br>
+            </form>
+
+        <h4>Directions</h4>	
+    		<ol>
+        		<li>To prepare the garlic butter steak recipe with potatoes wedges: In a large bowl,
+                    combine the steak strips with soy sauce, olive oil, pepper, and hot sauce. Set aside 
+                    and allow steak strips to marinate while you cook potatoes.</li>
+            	<li>In a large skillet over medium-high heat, mix 1 tablespoon olive oil and 1 
+                    tablespoon butter. When butter is melted, add potatoes wedges. Cook for about 4 minutes, 
+                    stir and cook an additional 4-5 minutes until potatoes wedges are golden and fork-tender. 
+                    Transfer sauteed potatoes to a plate and set aside.</li>
+            	<li>Keep the same skillet over medium heat and add remaining 2 tablespoons butter, garlic, 
+                    red chili pepper flakes, and fresh herbs. Lay the steak strips in one layer in the skillet, 
+                    keeping the drained steak marinade for later. Cook the steak strips on each side for 
+                    1 minute each, until nicely browned – adjust timing depending on how you like your steak.</li>
+            	<li>Right before the Garlic Butter steak is done, you can stir in the reserved marinade if you like, 
+                    and cook for one minute. Add the potatoes wedges back to the garlic butter steak pan and heat 
+                    through. Adjust seasoning with salt and pepper if necessary.</li>
+            	<li>Remove from heat and serve immediately your steak and potatoes, garnished with more crushed 
+                    chili pepper, fresh herbs, and a sprinkle of parmesan cheese over the potatoes if you like.</li>
+    		</ol>
+        </div>
+</body>
+</html>
