@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://i.pinimg.com/736x/f3/90/51/f3905139450f648eb3eb8feda64f0b1a.jpg");
+}
+
+#header-box {
+    border: 5px #000000 solid;
+    background-color: #0c97fa;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif ;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    min-height: 80px;
+}
+
+.header-img{
+    width: 120px;
+    height: 125px;
+}
+
+#anchor-box {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#anchors {
+    margin-top: 65px;
+    padding-bottom: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px #000000 solid;
+    background-color: #140278;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    line-height: 50px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+
+.info-box {
+    background-color: #0c97fa;
+    margin-top: 25px;
+    border: 5px #000000 solid;
+    text-align: center;
+}
+
+.picture-box {
+    padding-top: 25px;
+}
+
+#self-portrait {
+    width: 350px;
+    height: 450px;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 65px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    padding-top: 5px;
+    font-size: 35px;
+}
+
