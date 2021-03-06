@@ -1,7 +1,10 @@
 #square-container{
     border: 1px #000000 solid;
-    margin:auto;
-    min-height: 400px;
+    margin: auto;
+    width: 800px;
+    min-height: 450px;
+    transition: all 10s;
+    transition-timing-function: ease;
 }
 
 .even{
@@ -14,7 +17,8 @@
     font-weight: bold;
     text-align: center;
     line-height: 50px;
-    transition: all 3s;
+    transition: all 10s;
+    transition-timing-function: ease;
 }
 
 .odd{
@@ -27,13 +31,19 @@
     font-weight: bold;
     text-align: center;
     line-height: 50px;
-    transition: all 3s;
+    transition: all 10s;
+    transition-timing-function: ease;
+}
+
+#square-container:hover {
+    border-radius: 25px;
+    min-height: 470px;
 }
 
 #square-container:hover .even{
-    transform: translateX(-100px) rotate(1080deg);
+    transform: translateX(-320px) rotate(1080deg) scale(2);
 }
 
 #square-container:hover .odd{
-    transform: translateX(100px) rotate(1080deg);
+    transform: translateX(370px) rotate(-1080deg) scale(0.75);
 }
