@@ -1,7 +1,9 @@
 #container{
-    width: 300px;
+    min-width: 300px;
+    max-width: 500px;
+    max-height: 450px;
     margin: auto;
-    background-color: #61429d;
+    background-color: #d62424;
     padding: 10px;
     text-align: center;
     display: grid;
@@ -30,6 +32,7 @@
     border-radius: 3px;
     font-size: 30px;
     line-height: 50px;
+    cursor: pointer;
     
 }
 
