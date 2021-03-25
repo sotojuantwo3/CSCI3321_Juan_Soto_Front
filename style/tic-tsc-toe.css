@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+#container{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        'one two three'
+        'four five six'
+        'seven eight nine';
+}
+
+#status{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 65px;
+}
+
+#start{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 60px;
+    line-height: 100px;
+}
+
+.box{
+    height: 160px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    line-height: 160px;
+    cursor: pointer;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
