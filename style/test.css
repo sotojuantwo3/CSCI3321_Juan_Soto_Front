@@ -1,0 +1,24 @@
+#container{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#row{
+    display: flex;
+}
+
+.box{
+    width: 160px;
+    height: 155px;
+    margin: 5px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    line-height: 155px;
+    cursor: pointer;
+}
