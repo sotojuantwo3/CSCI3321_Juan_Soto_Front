@@ -9,19 +9,25 @@
     <title>Tic Tac Toe Game</title>
 </head>
 <body>
-    <h1>Click the Start to begin playing.<h1>
+    <h1 id="title">Click the Start to begin playing.<h1>
     <div id="container">
-        <div id="one" class="box" onclick="placeMarker('one')"></div>
-        <div id="two" class="box" onclick="placeMarker('two')"></div>
-        <div id="three" class="box" onclick="placeMarker('three')"></div>
-        <div id="four" class="box" onclick="placeMarker('four')"></div>
-        <div id="five" class="box" onclick="placeMarker('five')"></div>
-        <div id="six" class="box" onclick="placeMarker('six')"></div>
-        <div id="seven" class="box" onclick="placeMarker('seven')"></div>
-        <div id="eight" class="box" onclick="placeMarker('eight')"></div>
-        <div id="nine" class="box" onclick="placeMarker('nine')"></div>
+        <div id="row">
+            <div id="one" class="box" onclick="placeMarker('one')"></div>
+            <div id="two" class="box" onclick="placeMarker('two')"></div>
+            <div id="three" class="box" onclick="placeMarker('three')"></div>
+        </div>
+        <div id="row">
+            <div id="four" class="box" onclick="placeMarker('four')"></div>
+            <div id="five" class="box" onclick="placeMarker('five')"></div>
+            <div id="six" class="box" onclick="placeMarker('six')"></div>
+        </div>
+        <div id="row">
+            <div id="seven" class="box" onclick="placeMarker('seven')"></div>
+            <div id="eight" class="box" onclick="placeMarker('eight')"></div>
+            <div id="nine" class="box" onclick="placeMarker('nine')"></div>
+        </div>
     </div>
     <div id="status"></div>
-    <div id="start">Start</div>
+    <div id="start" onclick="startGame()">Start</div>
 </body>
 </html>

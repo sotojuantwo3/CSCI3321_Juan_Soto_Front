@@ -1,26 +1,29 @@
 var gameOver = false;
 var noWinner = false;
+var start = false;
 var totalMove = 0;
 var currentPlayer = 'X';
 
 function placeMarker(spotId){
+    // if the game has started
+    if(start){
     // if the game is not over
-    if(!gameOver){
+        if(!gameOver){
     //      get spot/ element by spotId
-    var spot = document.getElementById(spotId);
+        var spot = document.getElementById(spotId);
     //     if the spot is empty
     //      place the marker by changing the innerHTML of the spot
     //      depending on who is the current player
-        if(spot.innerHTML === ''){
-            if(currentPlayer === 'X'){
-                spot.innerHTML = 'X';
-                totalMove++;
+            if(spot.innerHTML === ''){
+                if(currentPlayer === 'X'){
+                    spot.innerHTML = 'X';
+                    totalMove++;
+                }
+                else{
+                    spot.innerHTML = 'O';
+                    totalMove++;
+                }
             }
-            else{
-                spot.innerHTML = 'O';
-                totalMove++;
-            }
-        }
     
     //      check if the current has won the game by calling currentPlayerWon
     //       if(currentPlayerWon()){
@@ -29,11 +32,12 @@ function placeMarker(spotId){
     //          if no, switch currentPlayer, totalMove++;, then call placeMarker again
     //     else
     //      do nothing
-        if(currentPlayerWon()){
-            updateGameStatus();
-        }
-        else{
-            updateGameStatus();
+            if(currentPlayerWon()){
+                updateGameStatus();
+            }
+            else{
+                updateGameStatus();
+            }
         }
     }
 }
@@ -106,12 +110,17 @@ function updateGameStatus(){
         }
         else{
             if(currentPlayer === 'X'){
-                statusboard.innerHTML = "Player X won!"
+                statusboard.innerHTML = "Player X won!";
             }
             else{
-                statusboard.innerHTML = "Player O won!"
+                statusboard.innerHTML = "Player O won!";
             }
         }
+        document.getElementById('title').innerHTML = "Click the Replay Button to play again.";
+        document.getElementById('start').innerHTML = "Replay";
+        document.getElementById('start').style.display = "block";
+        document.getElementById('title').style.display = "block";
+        start = false;
     }
     else{
         if(currentPlayer === 'X'){
@@ -126,4 +135,29 @@ function updateGameStatus(){
 }
 
 function startGame(){
+    if(gameOver){
+        gameOver = false;
+        noWinner = false;
+        start = true;
+        totalMove = 0;
+        currentPlayer = 'X'
+        document.getElementById('status').innerHTML = "Player X, place down your marker."
+        document.getElementById('start').style.display = "none";
+        document.getElementById('title').style.display = "none";
+        document.getElementById('one').innerHTML = '';
+        document.getElementById('two').innerHTML = '';
+        document.getElementById('three').innerHTML = '';
+        document.getElementById('four').innerHTML = '';
+        document.getElementById('five').innerHTML = '';
+        document.getElementById('six').innerHTML = '';
+        document.getElementById('seven').innerHTML = '';
+        document.getElementById('eight').innerHTML = '';
+        document.getElementById('nine').innerHTML = '';
+    }
+    else{
+        start = true;
+        document.getElementById('status').innerHTML = "Player X, place down your marker."
+        document.getElementById('start').style.display = "none";
+        document.getElementById('title').style.display = "none";
+    }
 }

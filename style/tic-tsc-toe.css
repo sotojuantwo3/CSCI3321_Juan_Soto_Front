@@ -1,25 +1,38 @@
 h1{
     text-align: center;
     font-size: 60px;
+    margin: auto;
+    padding-bottom: 10px;
 }
 #container{
     width: 500px;
     height: 500px;
     margin: auto;
-    background-color: cadetblue;
+    background-image: url("/images/index-wallpp.jpg");
     padding: 10px;
     text-align: center;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 
-        'one two three'
-        'four five six'
-        'seven eight nine';
+}
+
+#row{
+    display: flex;
+}
+
+.box{
+    width: 160px;
+    height: 155px;
+    margin: 5px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    line-height: 155px;
+    cursor: pointer;
 }
 
 #status{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 65px;
 }
 
@@ -28,53 +41,9 @@ h1{
     height: 100px;
     margin: auto;
     text-align: center;
-    background-color: cadetblue;
+    background-image: url("/images/index-wallpp.jpg");
     font-size: 60px;
-    line-height: 100px;
-}
-
-.box{
-    height: 160px;
-    background-color: blue;
-    text-align: center;
     color: white;
-    font-size: 80px;
-    line-height: 160px;
+    line-height: 100px;
     cursor: pointer;
-}
-
-#one{
-    grid-area: one;
-}
-
-#two{
-    grid-area: two;
-}
-
-#three{
-    grid-area: three;
-}
-
-#four{
-    grid-area: four;
-}
-
-#five{
-    grid-area: five;
-}
-
-#six{
-    grid-area: six;
-}
-
-#seven{
-    grid-area: seven;
-}
-
-#eight{
-    grid-area: eight;
-}
-
-#nine{
-    grid-area: nine;
 }
