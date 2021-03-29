@@ -3,6 +3,7 @@ var noWinner = false;
 var start = false;
 var totalMove = 0;
 var currentPlayer = 'X';
+var tryAgain = false;
 
 function placeMarker(spotId){
     // if the game has started
@@ -24,7 +25,11 @@ function placeMarker(spotId){
                     totalMove++;
                 }
             }
-    
+            // checks to make sure the spot is not occupied, if
+            // so, player has to pick another spot
+            else if(spot.innerHTML !== ''){
+                tryAgain = true;
+            }
     //      check if the current has won the game by calling currentPlayerWon
     //       if(currentPlayerWon()){
     //          if yes, display winner message, set gameover = true;
@@ -122,14 +127,23 @@ function updateGameStatus(){
         document.getElementById('title').style.display = "block";
         start = false;
     }
+    else if(tryAgain){
+        if(currentPlayer === 'X'){
+            statusboard.innerHTML = "Place an X on another spot!";
+        }
+        else{
+            statusboard.innerHTML = "Place an O on another spot!";
+        }
+        tryAgain = false;
+    }
     else{
         if(currentPlayer === 'X'){
             currentPlayer = 'O';
-            statusboard.innerHTML = "It is now Player O turn."
+            statusboard.innerHTML = "It is now Player O turn.";
         }
         else{
             currentPlayer = 'X';
-            statusboard.innerHTML = "It is now Player X turn."
+            statusboard.innerHTML = "It is now Player X turn.";
         }
     }
 }
@@ -140,8 +154,8 @@ function startGame(){
         noWinner = false;
         start = true;
         totalMove = 0;
-        currentPlayer = 'X'
-        document.getElementById('status').innerHTML = "Player X, place down your marker."
+        currentPlayer = 'X';
+        document.getElementById('status').innerHTML = "Player X, place down your marker.";
         document.getElementById('start').style.display = "none";
         document.getElementById('title').style.display = "none";
         document.getElementById('one').innerHTML = '';
@@ -156,7 +170,7 @@ function startGame(){
     }
     else{
         start = true;
-        document.getElementById('status').innerHTML = "Player X, place down your marker."
+        document.getElementById('status').innerHTML = "Player X, place down your marker.";
         document.getElementById('start').style.display = "none";
         document.getElementById('title').style.display = "none";
     }
